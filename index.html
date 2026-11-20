@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three Animations</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Three Animations</h1><p>Made with plain HTML, CSS and JavaScript</p></header>
+<nav><a href="#cat-box">Cat and Mouse</a><a href="#car-box">Rotating Car</a><a href="#drama-box">The Storm</a></nav>
+<main>
+
+<section id="cat-box"><h2>1. Cat and Mouse</h2>
+<p class="sub">The mouse runs round and round. The cat never takes its eyes off it.</p>
+<div class="wrap"><div class="stage floor">
+  <div id="cat">
+    <div class="tail"></div>
+    <div class="cbody"></div>
+    <div id="chead">
+      <div class="cear l"></div><div class="cear r"></div>
+      <div class="ceye l"><div class="cpupil"></div></div>
+      <div class="ceye r"><div class="cpupil"></div></div>
+      <div class="cnose"></div>
+      <div class="whisk l"></div><div class="whisk r"></div>
+    </div>
+  </div>
+  <div id="mouse"><i></i></div>
+</div></div></section>
+
+<section id="car-box"><h2>2. Rotating Car</h2>
+<p class="sub">The car turns round the centre point (the axis). Use the slider for speed.</p>
+<div class="wrap"><div class="stage grass">
+  <div id="road"></div>
+  <div id="arm"></div>
+  <div id="axis"></div>
+  <div id="car">
+    <div class="wheel" style="left:7px;top:-4px"></div>
+    <div class="wheel" style="left:41px;top:-4px"></div>
+    <div class="wheel" style="left:7px;top:28px"></div>
+    <div class="wheel" style="left:41px;top:28px"></div>
+  </div>
+</div></div>
+<div class="controls">Speed: <input type="range" id="speed" min="0" max="5" step="0.5" value="2"> Angle: <b id="deg">0°</b> <button id="flip">Reverse</button></div></section>
+
+<section id="drama-box"><h2>3. The Storm</h2>
+<p class="sub">A man with one leg and a crutch meets a dark figure on a cliff in a storm.</p>
+<div class="wrap"><div id="stage">
+    <div class="cliff"></div>
+    <div class="ground"></div>
+
+    <div class="person" id="me">
+      <div class="h-leg"></div>
+      <div class="h-arm"></div>
+      <div class="h-body"></div>
+      <div class="h-head"><b></b><b></b><span></span></div>
+      <div class="h-hair"></div>
+      <div class="crutch"></div>
+    </div>
+
+    <div class="person" id="foe">
+      <div class="cloak"></div>
+      <div class="f-eyes"><b></b><b></b></div>
+    </div>
+
+    <div id="bubble"></div>
+    <div id="dawn"></div>
+    <div id="flash"></div>
+  </div></div>
+<button id="replay">Replay</button></section>
+
+</main>
+<footer>Three Animations</footer>
+<script src="anime.js"></script>
+</body></html>
